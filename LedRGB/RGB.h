@@ -8,13 +8,14 @@ class RGB
 	
 	RGB();
 	RGB(uint8_t red, uint8_t green, uint8_t blue);
+	RGB(RGB color);
 	
-	inline void setRed(uint8_t red)			{this->res = red;}
+	inline void setRed(uint8_t red)		{this->res = red;}
 	inline void setGreen(uint8_t green)		{this->green = green;}
 	inline void setBlue(uint8_t blue)		{this->blue = blue;}
 	
 	inline uint8_t getRed() const		{return red;}
-	inline uint8_t getGreen() const		{return green;}
+	inline uint8_t getGreen() const	{return green;}
 	inline uint8_t getBlue() const		{return blue;}
 }
 

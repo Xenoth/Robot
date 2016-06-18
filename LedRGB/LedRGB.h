@@ -12,11 +12,11 @@ class LedRGB
 	public :
 		RGB bightness;
 		int8_t fade_red, fade_green, fade_blue;
-	
+		
 		LedRGB(uint8_t pin_red, uint8_t pin_green, uint8_t pin_blue)
 		
 	
-		void setBrightnessAll(uint8_t brightness.red, uint8_t brightness.green, uint8_t brightness.blue);
+		void setBrightnessAll(RGB brightness);
 		inline void setBrightnessRed(uint8_t brightness_red)		{this->brightness.red = brightness_red;}
 		inline void setBrightnessGreen(uint8_t brightness_green)	{this->brightness.green = brightness_green;}
 		inline void setBrightnessBlue(uint8_t brightness_blue)		{this->brightness.blue = brightness_blue;}
@@ -37,9 +37,9 @@ class LedRGB
 		inline int8_t getFadeBlue() const		{return fade_blue;}
 		
 		void turnOnAll();
-		void turnOnRed();
-		void turnOnGreen();
-		void turnOnBlue();
+		inline void turnOnRed() const	{analogWrite(pin_red, brightness.red);} 
+		inline void turnOnGreen() const	{analogWrite(pin_green, brightness.green);}
+		inline void turnOnBlue()	const	{analogWrite(pin_blue, brightness.blue);}
 	
 		void turnOffAll();
 		void turnOffRed();
