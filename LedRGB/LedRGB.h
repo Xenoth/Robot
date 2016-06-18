@@ -27,7 +27,7 @@ class LedRGB
 		void getBrightnessAll(uint8_t *brightness_red, uint8_t *brightness_green, uint8_t *brightness_blue) const;
 		inline uint8_t getBrightnessRed() const		{return brightness_red;}
 		inline uint8_t getBrightnessGreen() const	{return brightness_green;}
-		inline uint8_t getBrightnessBlue() const		{return brightness_blue;}
+		inline uint8_t getBrightnessBlue() const	{return brightness_blue;}
 		
 		void getFadeAll(int8_t *fade_red, int8_t *fade_green, int8_t *fade_blue) const;
 		inline int8_t getFadeRed() const		{return fade_red;}
