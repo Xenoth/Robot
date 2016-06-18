@@ -21,7 +21,7 @@ void LedRGB::setFadeAll(int8_t fade_red, int8_t fade_green, int8_t fade_blue)
 	setFadeBlue(fade_blue);
 }
 
-void LedRGB::getBrightnessAll(RGB brightness) const
+void LedRGB::getBrightnessAll(RGB &brightness) const
 {
 	brightness.red=red;
 	brightness.green=green;
