@@ -42,6 +42,31 @@ void LedRGB::turnOnAll()
 	turnOnBlue();
 }
 
+
+void LedRGB::turnOnAll(RGB brightness)
+{
+	setBrightnessAll(brightness);
+	turnOnAll();
+}
+
+void LedRGB::turnOnRed(uint8_t brightness)
+{
+	setBrightnessRed(brightness);
+	turnOnRed();
+}
+
+void LedRGB::turnOnGreen(uint8_t brightness)
+{
+	setBrightnessGreen(brightness);
+	turnOnGreen();
+}
+
+void LedRGB::turnOnBlue(uint8_t brightness)
+{
+	setBrightnessBlue(brightness);
+	turnOnBlue();
+}
+
 void LedRGB::turnOffAll()
 {
 	turnOffRed();

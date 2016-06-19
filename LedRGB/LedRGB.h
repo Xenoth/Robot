@@ -29,7 +29,7 @@ class LedRGB
 		void getBrightnessAll(RGB &brightness) const;
 		inline uint8_t getBrightnessRed() const		{return brightness.red;}
 		inline uint8_t getBrightnessGreen() const	{return brightness.green;}
-		inline uint8_t getBrightnessBlue() const	{return brightness.blue;}
+		inline uint8_t getBrightnessBlue() const		{return brightness.blue;}
 		
 		void getFadeAll(int8_t *fade_red, int8_t *fade_green, int8_t *fade_blue) const;
 		inline int8_t getFadeRed() const		{return fade_red;}
@@ -39,7 +39,12 @@ class LedRGB
 		void turnOnAll();
 		inline void turnOnRed() const	{analogWrite(pin_red, brightness.red);} 
 		inline void turnOnGreen() const	{analogWrite(pin_green, brightness.green);}
-		inline void turnOnBlue()const	{analogWrite(pin_blue, brightness.blue);}
+		inline void turnOnBlue()	const	{analogWrite(pin_blue, brightness.blue);}
+		
+		void turnOnAll(RGB brightness);
+		void turnOnRed(uint8_t brightness);
+		void turnOnGreen(uint8_t brightness);
+		void turnOnBlue(uint8_t brightness);
 	
 		void turnOffAll();
 		void turnOffRed();
