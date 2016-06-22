@@ -21,6 +21,7 @@ void Led::turnOn(uint8_t brightness)
 void Led::turnOff()
 {
    turnOn(0);
+   brightness=0;
 }
 
 void Led::fading()

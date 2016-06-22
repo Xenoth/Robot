@@ -18,7 +18,7 @@ class Robot
 	
 	
 	//INPUTS
-	const uint8_t pin_sensor=1;
+	const uint8_t pin_sensor=2;
 	
 	//MODULES
 	RGBLed rgb;

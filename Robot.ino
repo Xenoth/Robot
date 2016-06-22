@@ -9,6 +9,6 @@ void setup() {
 void loop() {
   if(rb.update())
   {
-    
+   delay(10);
   }
 }

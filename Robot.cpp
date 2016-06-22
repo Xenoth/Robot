@@ -27,12 +27,13 @@ void Robot::begin()
 	delay(250);
 	rgb.turnOnAll();
 	delay(250);
-	rgb.turnOffAll();	
+	rgb.turnOffAll();
+  rgb.setFadeAll(5, 5, 0);
 }
 
 bool Robot::update()
 {
-	if (irs.obstacleDetected())
+	if(irs.obstacleDetected())
 	{
 		alert();
 		rgb.turnOffAll();
@@ -54,21 +55,21 @@ void Robot::alert()
 	rgb.turnOffAll();
 	rgb.red.setBrightness(255);
 	rgb.turnOnAll();
-	bz.turnOn(255);
+	bz.turnOn(127);
 	delay(100);
 	rgb.turnOffAll();
 	bz.turnOff();
 	delay(100);
 	rgb.red.setBrightness(255);
 	rgb.turnOnAll();
-	bz.turnOn(255);
+	bz.turnOn(127);
 	delay(100);
 	rgb.turnOffAll();
 	bz.turnOff();
 	delay(100);
 	rgb.red.setBrightness(255);
 	rgb.turnOnAll();
-	bz.turnOn(255);
+	bz.turnOn(127);
 	delay(100);
 	rgb.turnOffAll();
 	bz.turnOff();	
