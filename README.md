@@ -10,7 +10,7 @@ Librairies for modules which can be found here : https://github.com/Xenoth/libra
 Not yet description for build
 
 ## Future
-* Remote controll from Android
+* Remote controll from Android with companion App
 * Kind of basic AI you must care
 
 ## Author
