@@ -12,3 +12,6 @@ Not yet description for build
 ## Future
 * Remote controll from Android
 * Kind of basic AI you must care
+
+## Author
+* BAILLEUX Pol
